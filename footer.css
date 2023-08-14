@@ -1,0 +1,39 @@
+
+.text-decoration-none{
+    position: relative;
+    display: inline-block;
+    color: #000;
+     
+  }
+  
+  .text-decoration-none:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height:2px;
+    bottom: 0;
+    left:0;
+    background: linear-gradient(120deg,#cf66b1, #bc0b8a);;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  
+  }
+  
+  .text-decoration-none:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .hr{
+    width:100%;
+    
+   }
+
+   @media (max-width: 767px){
+    hr{
+      display: none;
+    }
+  
+  }
+
